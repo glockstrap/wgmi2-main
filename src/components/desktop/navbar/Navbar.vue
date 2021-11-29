@@ -5,7 +5,7 @@
     <!-- <navbar-button text="The story" />
     <navbar-button text="Our community" />
     <navbar-button text="Join the movement" /> -->
-    <navbar-icons filename="discord.svg" hreflink="https://discord.gg/ReWXytCD"/>
+    <navbar-icons filename="discord.svg" :hreflink="DISCORD_URL"/>
     <navbar-icons filename="twitter.svg" hreflink="https://twitter.com/wgmi4thepeople"/>
     <navbar-icons filename="telegram.svg" hreflink="https://t.me/WGMI_chan"/>
     <navbar-icons filename="coingecko.png" hreflink="https://www.coingecko.com/en/coins/wgmi"/>
@@ -17,9 +17,14 @@
 <script>
 // import NavbarButton from "./NavbarButton.vue";
 import NavbarIcons from "./NavbarIcons.vue";
+import { DISCORD_URL } from '@/config/constant.js'
 export default {
-  components: { NavbarIcons }
-  // components: { NavbarButton, NavbarIcons },
+  components: { NavbarIcons },
+  data: () => {
+    return {
+      DISCORD_URL: DISCORD_URL
+    }
+  }
 };
 </script>
 

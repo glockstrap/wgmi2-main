@@ -133,7 +133,7 @@
           <v-col class="btn-col">
             <story-button
               text="JOIN OUR DISCORD"
-              hreflink="https://discord.gg/ReWXytCD"
+              :hreflink="DISCORD_URL"
               ><v-img
                 max-height="40"
                 max-width="40"
@@ -238,11 +238,17 @@
 <script>
 import CopyButton from "./CopyButton.vue";
 import StoryButton from "./StoryButton.vue";
+import { DISCORD_URL } from '@/config/constant.js'
 export default {
   components: {
     StoryButton,
     CopyButton,
   },
+  data: () => {
+    return {
+      DISCORD_URL: DISCORD_URL
+    }
+  }
 };
 </script>
 
