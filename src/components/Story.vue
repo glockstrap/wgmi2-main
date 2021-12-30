@@ -20,7 +20,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-container class="story-container-2" fluid>
+    <!-- <v-container class="story-container-2" fluid>
       <v-row>
         <v-col cols="6">
           <div class="description inter-text">
@@ -190,7 +190,7 @@
             To prevent bot sandwiches
           </v-row>
 
-          <!-- <v-row style="margin-top: 100px">
+          <v-row style="margin-top: 100px">
             <v-btn color="#193BE3" x-large class="story-btn"
               ><v-img
                 class="mr-3 inter-text"
@@ -201,7 +201,7 @@
                 >Here’s a guide on how to buy $WGMI</span
               ></v-btn
             >
-          </v-row> -->
+          </v-row>
         </v-col>
       </v-row>
       <v-row class="pt-12">
@@ -209,17 +209,17 @@
           Made with ♥️ for the $WGMI community. Design by <a href="https://twitter.com/h4nz013" target="_blank">h4nz013</a> and developped by <a href="https://twitter.com/0xMXCLL" target="_blank">MXKLL</a>
         </v-col>
       </v-row>
-    </v-container>
+    </v-container> -->
   </div>
 </template>
 
 <script>
-import CopyButton from './CopyButton.vue';
-import StoryButton from "./StoryButton.vue";
+// import CopyButton from './CopyButton.vue';
+// import StoryButton from "./StoryButton.vue";
 export default {
   components: {
-    StoryButton,
-    CopyButton,
+    // StoryButton,
+    // CopyButton,
   },
 };
 </script>
@@ -229,7 +229,6 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 
 .story-container-1 {
-  background-color: black;
   color: white;
   padding-bottom: 200px;
   padding-left: 120px;
