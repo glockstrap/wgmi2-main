@@ -1,13 +1,13 @@
 <template>
     <div class="logo-row">
         <div class="logo-circle-container">
-            <v-img class="logo-circle" :src="require(`@/assets/v2/wgmi-vert_1.png`)" />
+            <v-img class="logo-circle" contain :src="require(`@/assets/v2/phoenix_crop.png`)" />
         </div>
         <div class="logo-circle-container">
-            <v-img class="logo-circle" :src="require(`@/assets/v2/wgmi-vert_1.png`)" />
+            <v-img class="logo-circle" contain :src="require(`@/assets/v2/wgmi-vert_1.png`)" />
         </div>
         <div class="logo-circle-container">
-            <v-img class="logo-circle" :src="require(`@/assets/v2/wgmi-vert_1.png`)" />
+            <v-img class="logo-circle" contain :src="require(`@/assets/v2/phoenix2_crop.png`)" />
         </div>
     </div>
 </template>
@@ -35,6 +35,7 @@ export default {
 }
 
 .logo-circle {
-    max-width: 50px;
+    height: 50px;
+    width: 50px;
 }
 </style>
